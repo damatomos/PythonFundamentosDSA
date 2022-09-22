@@ -5,7 +5,7 @@ import random
 import time
 
 # variavel que recebe o valor do nivel digitado, o valor inserido pelo usuario e convertido para inteiro
-level = int(input("Qual nível você gostaria de jogar? 1/2/3/4/5 \n"))
+level = 3 #int(input("Qual nível você gostaria de jogar? 1/2/3/4/5 \n"))
 # variavel que recebe o valor de 500 dividido pelo nivel informado ( se refere ao tamanho da barra )
 length = 500/level
 
@@ -25,7 +25,7 @@ root.wm_attributes("-topmost", 1) # define que a janela vai abrir em cima das ou
 # bg define a cor de background
 #highlightthickness se refere a uma borda highlight ao redor da janela
 border_size = 0
-highlight_size = 50
+highlight_size = 2
 canvas = Canvas(root, width=800, height=600, bd=border_size, bg="#ffaa00", highlightthickness=highlight_size)
 # organiza os elementos da tela em bloco antes de colocar na janela
 canvas.pack()
